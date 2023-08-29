@@ -26,3 +26,25 @@ function linkAction(){
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const form = document.querySelector('.contact_form');
+function sendMsg(e){
+      e.preventDefault();
+const name = document.querySelector('.name'),
+      email = document.querySelector('.email'),
+      msg = document.querySelector('.msg');
+
+      console.log(msg.value);
+      email.send({
+      SecureToken : "6ce6a1d7-bccc-41cf-914f-5c7622c59f70",
+      To : 'asir4937@gmail.com',
+      From : email.value,
+      Subject : "Contact Form",
+      Body : msg.value
+  }).then(
+    message => alert(message)
+  );
+
+}
+
+form.addEventListener('submit',sendMsg);

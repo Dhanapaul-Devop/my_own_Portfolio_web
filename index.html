@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Portfolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -749,7 +751,7 @@
                 <span class="skill_name">UI / UX</span>
               </div>
 
-              <div><span class="skill_percentage">85%</span></div>
+              <div><span class="skill_percentage">50%</span></div>
 
               <div class="skill_bar skill_ui"></div>
             </div>
@@ -1019,7 +1021,7 @@
         <h2 class="section-title" data-aos="fade-down">Contact</h2>
 
         <div class="contact_container bd_grid">
-          <form action="#" class="contact_form">
+          <form action="#" method="post"  class="contact_form">
             <input
               type="text"
               placeholder="Name"
@@ -1028,7 +1030,7 @@
               data-aos-delay="250"
             />
             <input
-              type="mail"
+              type="email"
               placeholder="Email"
               class="control_input"
               data-aos="fade-right"
@@ -1039,14 +1041,14 @@
               placeholder="Send your comments"
               id=""
               cols="0"
-              rows="10"
+              rows="5"
               class="control_input"
               data-aos="fade-right"
               data-aos-delay="400"
             ></textarea>
 
             <input
-              type="button"
+              type="submit"
               value="Send"
               class="control_button button"
               data-aos="fade-right"
